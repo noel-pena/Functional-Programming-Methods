@@ -1,8 +1,11 @@
+import {Container} from "@mui/material";
+import MapArray from "./components/MapArray.tsx";
+
 function App() {
   return (
-    <>
-        start here
-    </>
+    <Container>
+        <MapArray />
+    </Container>
   )
 }
 
