@@ -20,7 +20,7 @@ function ReusableBox(props: ReusableBoxProps){
                 <Typography variant='caption'>Raw data: {JSON.stringify(data)}</Typography>
                 {isToggled && (
                     data.map(item => (
-                        <Stack>
+                        <Stack key={item.id}>
                             <Typography fontWeight='bold' variant='caption'>{item.name}</Typography>
                         </Stack>
                     ))
