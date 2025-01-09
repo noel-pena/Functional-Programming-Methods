@@ -1,10 +1,19 @@
+import React from "react";
 import {Person} from "../types";
 import {Button, ButtonProps, Card, Stack, Typography} from "@mui/material";
-import React from "react";
 
 interface ReusableBoxProps extends ButtonProps {
+    /**
+     * Primary text for component
+     */
     primaryText: string
+    /**
+     * Secondary text for component
+     */
     secondaryText: string
+    /**
+     * Array for data to map
+     */
     data: Array<Person>
 }
 
@@ -25,7 +34,9 @@ function ReusableBox(props: ReusableBoxProps){
                         </Stack>
                     ))
                 )}
-                <Button variant='contained' onClick={() => setIsToggled(!isToggled)}>Map</Button>
+                <Button variant='contained' onClick={() => setIsToggled(!isToggled)}>
+                    {isToggled ? 'Revert' : 'Render'}
+                </Button>
             </Stack>
         </Card>
     )

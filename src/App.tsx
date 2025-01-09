@@ -3,7 +3,7 @@ import MapArray from "./components/MapArray.tsx";
 
 function App() {
   return (
-    <Container>
+    <Container sx={{p: 2}}>
         <MapArray />
     </Container>
   )
