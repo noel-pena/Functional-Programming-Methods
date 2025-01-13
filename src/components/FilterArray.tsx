@@ -1,4 +1,3 @@
-import {Stack} from "@mui/material";
 import ReusableCard from "./ReusableCard.tsx";
 import {Person} from "../types";
 
@@ -10,9 +9,13 @@ function FilterArray(){
     ]
 
     return(
-        <Stack>
-            <ReusableCard primaryText='primary text' secondaryText='secondary text' data={mockPersons} />
-        </Stack>
+        <>
+            <ReusableCard
+                primaryText='primary text'
+                secondaryText='secondary text'
+                data={mockPersons}
+            />
+        </>
     )
 }
 
