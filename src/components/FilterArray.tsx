@@ -8,12 +8,14 @@ function FilterArray(){
         {id: 3, name: 'Master Chief', age: 40}
     ]
 
+    const filteredPerson = mockPersons.filter(person => person.name === 'Master Chief')
+
     return(
         <>
             <ReusableCard
                 primaryText='primary text'
                 secondaryText='secondary text'
-                data={mockPersons}
+                data={filteredPerson}
             />
         </>
     )
